@@ -1,0 +1,1170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>623 Tyner Way · Social Media Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --ink:#161512; --paper:#f4efe6; --paper-2:#ece5d6; --paper-3:#e2d9c5;
+  --forest:#1f2a26; --forest-deep:#131c1a;
+  --bronze:#a98256; --bronze-soft:#c9a373;
+  --line:rgba(22,21,18,.14); --line-strong:rgba(22,21,18,.22);
+  --line-light:rgba(244,239,230,.18);
+  --serif:'Cormorant Garamond', 'Times New Roman', serif;
+  --sans:'Manrope', system-ui, sans-serif;
+  --max:1440px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+.eyebrow{font-size:11px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--bronze)}
+h1,h2,h3{font-family:var(--serif);font-weight:300;letter-spacing:-.005em;line-height:1.04}
+h1{font-size:clamp(48px,7vw,108px)}
+h2{font-size:clamp(34px,4.4vw,68px)}
+h3{font-size:clamp(22px,2.4vw,32px)}
+
+/* ============ TOP ============ */
+.top{
+  position:relative;padding:90px clamp(20px,4vw,56px) 60px;
+  border-bottom:1px solid var(--line);background:var(--paper);
+}
+.top .wrap{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:end}
+.top h1{margin:18px 0 22px}
+.top h1 em{font-style:italic;color:var(--bronze);font-weight:400}
+.top .lead{font-family:var(--serif);font-style:italic;font-size:clamp(20px,1.8vw,26px);line-height:1.4;color:#3a362f;max-width:560px}
+.top .meta{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#6c655a;display:flex;flex-direction:column;gap:10px;border-left:1px solid var(--line);padding-left:24px}
+.top .meta strong{font-weight:500;color:var(--ink);font-family:var(--serif);font-size:22px;letter-spacing:-.01em;text-transform:none}
+.top .meta em{font-style:italic;color:var(--bronze)}
+@media (max-width:900px){.top .wrap{grid-template-columns:1fr;gap:32px}}
+
+/* ============ INDEX / TOC ============ */
+.toc{
+  background:var(--forest);color:var(--paper);
+  padding:36px clamp(20px,4vw,56px);
+}
+.toc .wrap{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(8,1fr);gap:0;align-items:stretch}
+.toc a{
+  padding:18px 14px;text-align:center;border-right:1px solid var(--line-light);
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,239,230,.78);
+  text-decoration:none;transition:background .25s,color .25s;
+  display:flex;flex-direction:column;align-items:center;gap:10px;justify-content:center;
+}
+.toc a:last-child{border-right:0}
+.toc a:hover{background:var(--forest-deep);color:var(--bronze-soft)}
+.toc a span.n{font-family:var(--serif);font-style:italic;font-size:18px;letter-spacing:.02em;color:var(--bronze-soft);text-transform:none;font-weight:400}
+@media (max-width:900px){.toc .wrap{grid-template-columns:repeat(4,1fr)} .toc a{border-bottom:1px solid var(--line-light)}}
+@media (max-width:520px){.toc .wrap{grid-template-columns:repeat(2,1fr)}}
+
+/* ============ SECTIONS ============ */
+section.platform{
+  padding:clamp(70px,8vw,120px) clamp(20px,4vw,56px);
+  border-bottom:1px solid var(--line);
+}
+section.platform:nth-of-type(even){background:var(--paper-2)}
+.platform .wrap{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:minmax(0,440px) 1fr;gap:clamp(40px,5vw,90px);align-items:start}
+.platform .head{position:sticky;top:24px}
+.platform .head .badge{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  padding:8px 14px;background:var(--ink);color:var(--paper);border-radius:999px;font-weight:500;
+}
+.platform .head .badge .dot{width:6px;height:6px;border-radius:50%;background:var(--bronze-soft)}
+.platform .head h2{margin:22px 0 18px}
+.platform .head h2 em{font-style:italic;color:var(--bronze)}
+.platform .head .desc{font-size:15px;line-height:1.6;color:#3a362f;margin-bottom:24px}
+.platform .head .tips{border-top:1px solid var(--line);padding-top:22px;margin-top:6px}
+.platform .head .tips h4{font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;color:var(--bronze);margin-bottom:14px;font-family:var(--sans)}
+.platform .head .tips ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.platform .head .tips li{font-size:13px;line-height:1.55;color:#3a362f;display:flex;gap:10px;align-items:baseline}
+.platform .head .tips li::before{content:"";width:4px;height:4px;background:var(--bronze);border-radius:50%;flex-shrink:0;transform:translateY(-2px)}
+@media (max-width:1000px){.platform .wrap{grid-template-columns:1fr;gap:40px}.platform .head{position:static}}
+
+.platform .content{display:flex;flex-direction:column;gap:36px}
+
+/* ============ COPY BLOCK ============ */
+.copy-block{
+  background:#fff;border:1px solid var(--line);position:relative;
+  box-shadow:0 14px 30px -22px rgba(0,0,0,.18);
+}
+.copy-block .cb-head{
+  padding:14px 18px;display:flex;justify-content:space-between;align-items:center;
+  border-bottom:1px solid var(--line);background:var(--paper);
+}
+.copy-block .cb-head .lbl{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#6c655a;font-weight:500}
+.copy-block .cb-head .cb-copy{
+  font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+  padding:6px 12px;border:1px solid var(--line-strong);border-radius:999px;
+  color:var(--ink);transition:background .2s,color .2s;font-weight:500;
+}
+.copy-block .cb-copy.copied{background:var(--forest);color:var(--paper);border-color:var(--forest)}
+.copy-block .cb-body{padding:24px 22px;font-size:14.5px;line-height:1.7;color:#2a2620;white-space:pre-wrap;word-wrap:break-word;font-family:var(--sans)}
+.copy-block .cb-body .tag{color:var(--bronze);font-weight:500}
+.copy-block .cb-body strong{font-weight:600;color:var(--ink)}
+
+/* ============ MOCKUP - GENERIC ============ */
+.mockup{
+  background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+  box-shadow:0 30px 60px -28px rgba(0,0,0,.28);
+  max-width:540px;margin:0 auto;width:100%;
+  font-family:-apple-system,'SF Pro Text','Segoe UI',Roboto,sans-serif;
+}
+
+/* ============ INSTAGRAM FEED ============ */
+.ig-post{max-width:520px}
+.ig-post .ig-head{display:flex;align-items:center;gap:12px;padding:12px 14px}
+.ig-post .ig-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#a98256,#1f2a26);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--serif);font-size:14px;font-weight:500;flex-shrink:0;padding:2px;position:relative}
+.ig-post .ig-avatar::before{content:"";position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(from 0deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75);z-index:-1}
+.ig-post .ig-avatar-inner{width:100%;height:100%;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;border:2px solid #fff}
+.ig-post .ig-avatar-inner span{width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,#a98256,#1f2a26);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--serif);font-size:13px}
+.ig-post .ig-userinfo{flex:1;line-height:1.2}
+.ig-post .ig-username{font-size:14px;font-weight:600;color:#262626}
+.ig-post .ig-sub{font-size:11px;color:#8e8e8e;margin-top:2px}
+.ig-post .ig-more{color:#262626;font-size:18px;letter-spacing:2px;line-height:1}
+.ig-post .ig-img{position:relative;background:#000;aspect-ratio:1/1;overflow:hidden}
+.ig-post .ig-img img{width:100%;height:100%;object-fit:cover}
+.ig-post .ig-img .carousel-dot{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:11px;font-weight:500;padding:5px 10px;border-radius:999px;display:flex;align-items:center;gap:5px}
+.ig-post .ig-img .carousel-dot svg{width:12px;height:12px}
+.ig-post .ig-actions{display:flex;align-items:center;padding:10px 12px 4px}
+.ig-post .ig-actions svg{width:24px;height:24px;stroke:#262626;fill:none;stroke-width:1.8}
+.ig-post .ig-actions .sp{flex:1}
+.ig-post .ig-actions > * + *{margin-left:14px}
+.ig-post .ig-likes{padding:4px 14px;font-size:14px;font-weight:600;color:#262626}
+.ig-post .ig-caption{padding:4px 14px 14px;font-size:14px;line-height:1.4;color:#262626}
+.ig-post .ig-caption b{font-weight:600}
+.ig-post .ig-caption .more{color:#8e8e8e}
+.ig-post .ig-caption .ig-tags{color:#00376b;font-weight:400}
+.ig-post .ig-time{padding:0 14px 14px;font-size:10px;color:#8e8e8e;text-transform:uppercase;letter-spacing:.5px}
+
+/* ============ INSTAGRAM CAROUSEL THUMBS ============ */
+.carousel-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:6px}
+.carousel-grid .slide{position:relative;aspect-ratio:1/1;background:#000;overflow:hidden;border-radius:6px;border:1px solid var(--line)}
+.carousel-grid .slide img{width:100%;height:100%;object-fit:cover}
+.carousel-grid .slide .n{position:absolute;top:5px;left:5px;background:rgba(0,0,0,.7);color:#fff;font-size:10px;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-family:var(--sans)}
+.carousel-grid .slide .lbl{position:absolute;bottom:4px;left:4px;right:4px;color:#fff;font-size:10px;font-weight:500;text-shadow:0 1px 4px rgba(0,0,0,.8);line-height:1.2}
+.carousel-grid .slide.text{background:linear-gradient(160deg,#1f2a26,#131c1a);display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;color:var(--paper);font-family:var(--serif);font-style:italic;font-size:11px;line-height:1.3}
+.carousel-grid .slide.text em{color:var(--bronze-soft)}
+@media (max-width:600px){.carousel-grid{grid-template-columns:repeat(5,1fr)}}
+
+/* ============ STORY MOCK ============ */
+.story-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.story{
+  width:170px;aspect-ratio:9/16;border-radius:18px;overflow:hidden;position:relative;
+  background:#000;box-shadow:0 20px 40px -20px rgba(0,0,0,.4);flex-shrink:0;
+}
+.story img{width:100%;height:100%;object-fit:cover;opacity:.85}
+.story .st-bars{position:absolute;top:8px;left:8px;right:8px;display:flex;gap:3px}
+.story .st-bars span{flex:1;height:2px;background:rgba(255,255,255,.4);border-radius:1px}
+.story .st-bars span:first-child{background:#fff}
+.story .st-head{position:absolute;top:18px;left:10px;right:10px;display:flex;align-items:center;gap:6px;color:#fff;font-size:11px}
+.story .st-head .av{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#a98256,#1f2a26);border:1.5px solid #fff}
+.story .st-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:18px;color:#fff;text-align:center}
+.story .st-content .pre{font-size:8px;letter-spacing:.3em;text-transform:uppercase;opacity:.9;margin-bottom:8px}
+.story .st-content h4{font-family:var(--serif);font-style:italic;font-size:22px;font-weight:400;line-height:1.15;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.story .st-content .stk{position:absolute;background:#fff;color:#000;font-size:10px;font-weight:700;padding:6px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;box-shadow:0 4px 12px rgba(0,0,0,.3);transform:rotate(-3deg)}
+.story .st-content .stk.bot{bottom:32px;background:linear-gradient(90deg,#feda75,#d62976)}
+
+/* ============ FACEBOOK ============ */
+.fb-post{max-width:540px;border-radius:8px;font-size:14px}
+.fb-post .fb-head{padding:12px 14px;display:flex;gap:10px;align-items:flex-start}
+.fb-post .fb-av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#a98256,#1f2a26);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:14px;flex-shrink:0}
+.fb-post .fb-name{font-weight:600;color:#050505;font-size:14.5px;display:flex;align-items:center;gap:6px}
+.fb-post .fb-name svg{width:12px;height:12px;fill:#0866ff}
+.fb-post .fb-time{font-size:12px;color:#65676b;display:flex;align-items:center;gap:4px;margin-top:1px}
+.fb-post .fb-time::after{content:"·"}
+.fb-post .fb-time span{margin-left:4px}
+.fb-post .fb-text{padding:0 14px 12px;font-size:14.5px;line-height:1.45;color:#050505;white-space:pre-wrap}
+.fb-post .fb-text .tag{color:#0866ff}
+.fb-post .fb-img{background:#000;aspect-ratio:16/10;overflow:hidden}
+.fb-post .fb-img img{width:100%;height:100%;object-fit:cover}
+.fb-post .fb-stats{padding:10px 14px;display:flex;justify-content:space-between;font-size:13px;color:#65676b;border-bottom:1px solid #ced0d4}
+.fb-post .fb-reacts{display:flex;align-items:center;gap:4px}
+.fb-post .fb-r{width:18px;height:18px;border-radius:50%;border:1.5px solid #fff;margin-left:-4px}
+.fb-post .fb-r.like{background:#0866ff;margin-left:0}
+.fb-post .fb-r.heart{background:#f33e58}
+.fb-post .fb-r.care{background:#f7b125}
+.fb-post .fb-actions{display:flex;padding:4px;border-top:1px solid #ced0d4}
+.fb-post .fb-action{flex:1;text-align:center;padding:8px;font-size:13px;font-weight:600;color:#65676b;border-radius:6px;display:flex;align-items:center;justify-content:center;gap:6px}
+.fb-post .fb-action svg{width:18px;height:18px;stroke:#65676b;fill:none;stroke-width:1.8}
+
+/* ============ LINKEDIN ============ */
+.li-post{max-width:540px;border-radius:8px;border:1px solid #d6d6d6;font-size:14px}
+.li-post .li-head{padding:14px 16px 6px;display:flex;gap:10px}
+.li-post .li-av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#a98256,#1f2a26);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:18px;flex-shrink:0}
+.li-post .li-name{font-weight:600;color:#000;font-size:14.5px}
+.li-post .li-title{font-size:12px;color:#666;margin-top:2px;line-height:1.3}
+.li-post .li-time{font-size:12px;color:#666;margin-top:4px;display:flex;align-items:center;gap:4px}
+.li-post .li-time::after{content:"· 🌐"}
+.li-post .li-text{padding:8px 16px 12px;font-size:14px;line-height:1.5;color:#000;white-space:pre-wrap}
+.li-post .li-text .tag{color:#0a66c2;font-weight:600}
+.li-post .li-text .more{color:#666}
+.li-post .li-img{background:#000;aspect-ratio:1.91/1;overflow:hidden}
+.li-post .li-img img{width:100%;height:100%;object-fit:cover}
+.li-post .li-stats{padding:10px 16px;font-size:12px;color:#666;border-bottom:1px solid #e8e8e8;display:flex;justify-content:space-between}
+.li-post .li-actions{display:flex;padding:4px}
+.li-post .li-action{flex:1;text-align:center;padding:10px;font-size:13px;font-weight:600;color:#666}
+
+/* ============ X / TWITTER THREAD ============ */
+.x-thread{max-width:540px;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14px;color:#0f1419}
+.x-tweet{padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:12px;border-bottom:1px solid #eff3f4;position:relative}
+.x-tweet:last-child{border-bottom:0}
+.x-tweet .x-avwrap{display:flex;flex-direction:column;align-items:center;gap:4px}
+.x-tweet .x-av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#a98256,#1f2a26);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:14px;flex-shrink:0}
+.x-tweet .x-thread-line{flex:1;width:2px;background:#cfd9de;min-height:8px}
+.x-tweet:last-child .x-thread-line{display:none}
+.x-tweet .x-name{font-weight:700;font-size:14px;display:flex;align-items:center;gap:4px}
+.x-tweet .x-name svg{width:14px;height:14px;fill:#1d9bf0}
+.x-tweet .x-handle{color:#536471;font-weight:400;margin-left:2px}
+.x-tweet .x-text{font-size:14.5px;line-height:1.4;margin-top:2px;white-space:pre-wrap}
+.x-tweet .x-text .tag{color:#1d9bf0}
+.x-tweet .x-img{margin-top:10px;border-radius:14px;overflow:hidden;border:1px solid #eff3f4;aspect-ratio:16/9;background:#000}
+.x-tweet .x-img img{width:100%;height:100%;object-fit:cover}
+.x-tweet .x-stats{display:flex;justify-content:space-between;margin-top:10px;color:#536471;font-size:12px;max-width:340px}
+.x-tweet .x-stats span{display:flex;align-items:center;gap:4px}
+.x-tweet .x-stats svg{width:14px;height:14px;stroke:#536471;fill:none;stroke-width:1.8}
+.x-tweet .x-n{font-family:var(--serif);font-style:italic;color:#a98256;font-size:11px;position:absolute;top:14px;right:16px;letter-spacing:.05em}
+
+/* ============ PINTEREST ============ */
+.pin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:600px}
+.pin{
+  border-radius:16px;overflow:hidden;background:#fff;
+  border:1px solid var(--line);box-shadow:0 8px 18px -10px rgba(0,0,0,.18);
+  position:relative;
+}
+.pin-img{aspect-ratio:2/3;background:#000;overflow:hidden;position:relative}
+.pin-img img{width:100%;height:100%;object-fit:cover}
+.pin-img .save{position:absolute;top:8px;right:8px;background:#e60023;color:#fff;font-size:11px;font-weight:700;padding:7px 12px;border-radius:999px}
+.pin-img .overlay-title{position:absolute;left:10px;right:10px;bottom:12px;color:#fff;font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.15;text-shadow:0 2px 10px rgba(0,0,0,.6);font-weight:500}
+.pin-meta{padding:10px 12px;font-size:11px;color:#555;line-height:1.4}
+.pin-meta .pt{font-weight:600;color:#111;display:block;font-size:12px;margin-bottom:2px}
+
+/* ============ TIKTOK / REEL ============ */
+.tt-mock{
+  width:260px;aspect-ratio:9/16;border-radius:24px;overflow:hidden;position:relative;
+  background:#000;box-shadow:0 30px 60px -25px rgba(0,0,0,.5);margin:0 auto;
+}
+.tt-mock img{width:100%;height:100%;object-fit:cover;opacity:.9}
+.tt-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 30%,transparent 60%,rgba(0,0,0,.7) 100%)}
+.tt-text{position:absolute;left:12px;right:60px;bottom:90px;color:#fff}
+.tt-text .username{font-size:13px;font-weight:700;margin-bottom:6px}
+.tt-text .cap{font-size:12px;line-height:1.35}
+.tt-text .cap .h{color:#fff;font-weight:600}
+.tt-text .music{font-size:11px;display:flex;align-items:center;gap:6px;margin-top:10px;opacity:.9}
+.tt-side{position:absolute;right:8px;bottom:90px;display:flex;flex-direction:column;gap:18px;align-items:center;color:#fff}
+.tt-side .av{width:42px;height:42px;border-radius:50%;border:2px solid #fff;background:linear-gradient(135deg,#a98256,#1f2a26);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:14px;position:relative}
+.tt-side .av::after{content:"+";position:absolute;bottom:-7px;background:#fe2c55;color:#fff;width:16px;height:16px;border-radius:50%;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:700}
+.tt-side .ic{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600}
+.tt-side .ic svg{width:30px;height:30px;fill:#fff;stroke:#fff}
+.tt-hook{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;width:80%}
+.tt-hook .hk{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1.15;text-shadow:0 4px 18px rgba(0,0,0,.7);font-weight:500}
+.tt-hook .hk em{color:var(--bronze-soft)}
+
+/* ============ SHOT LIST / SCRIPT ============ */
+.shot-list{
+  background:#fff;border:1px solid var(--line);
+}
+.shot-list h4{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--bronze);padding:14px 18px;border-bottom:1px solid var(--line);background:var(--paper);font-weight:500;font-family:var(--sans)}
+.shot-list ol{list-style:none;counter-reset:shots}
+.shot-list li{
+  counter-increment:shots;
+  display:grid;grid-template-columns:54px auto 1fr;gap:18px;align-items:flex-start;
+  padding:14px 18px;border-bottom:1px solid var(--line);font-size:14px;line-height:1.55;
+}
+.shot-list li:last-child{border-bottom:0}
+.shot-list li::before{content:"0" counter(shots);font-family:var(--serif);font-style:italic;color:var(--bronze);font-size:18px;font-weight:400}
+.shot-list li .time{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#6c655a;font-weight:500;padding-top:3px;white-space:nowrap}
+.shot-list li .desc{color:#3a362f}
+.shot-list li .desc b{font-weight:600;color:var(--ink);display:block;margin-bottom:2px}
+
+/* ============ FOOTER ============ */
+.footer{
+  background:var(--forest-deep);color:rgba(244,239,230,.6);
+  padding:50px clamp(20px,4vw,56px);
+}
+.footer .wrap{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;align-items:start}
+.footer .brand{font-family:var(--serif);font-size:22px;color:var(--paper)}
+.footer .brand em{font-style:italic;color:var(--bronze-soft)}
+.footer h5{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze-soft);margin-bottom:14px;font-weight:500;font-family:var(--sans)}
+.footer .col p{font-size:13px;line-height:1.6;color:rgba(244,239,230,.7)}
+.footer .col a{color:var(--paper);text-decoration:none;border-bottom:1px solid rgba(244,239,230,.2)}
+@media (max-width:700px){.footer .wrap{grid-template-columns:1fr}}
+
+.platform .content h4.subhead{
+  font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--bronze);
+  font-family:var(--sans);font-weight:500;
+  margin-top:8px;margin-bottom:-12px;display:flex;align-items:center;gap:14px;
+}
+.platform .content h4.subhead::before,.platform .content h4.subhead::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* Small util */
+.muted{color:#6c655a}
+.platform .head .num-tag{
+  font-family:var(--serif);font-style:italic;font-size:90px;line-height:.9;color:var(--bronze);
+  position:absolute;top:-10px;right:0;opacity:.18;font-weight:400;
+}
+.platform .head{position:relative}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP ============ -->
+<header class="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">623 Tyner Way · Social Media Kit</div>
+      <h1>Posts ready to <em>publish.</em></h1>
+      <p class="lead">A platform-by-platform playbook — feed posts, stories, reels, threads, and pins. Each post is mocked up below, with the exact caption, hashtags, and image queued and copyable.</p>
+    </div>
+    <div class="meta">
+      <span>Property</span>
+      <strong>623 Tyner Way · <em>Incline Village, NV</em></strong>
+      <span>List Price · $6,495,000</span>
+      <span>6 BR · 5.5 BA · 7,402 sf</span>
+      <span>MLS · #1018855</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TOC ============ -->
+<nav class="toc">
+  <div class="wrap">
+    <a href="#instagram"><span class="n">01</span>Instagram</a>
+    <a href="#story"><span class="n">02</span>IG Stories</a>
+    <a href="#reel"><span class="n">03</span>Reel / TikTok</a>
+    <a href="#facebook"><span class="n">04</span>Facebook</a>
+    <a href="#linkedin"><span class="n">05</span>LinkedIn</a>
+    <a href="#twitter"><span class="n">06</span>X / Twitter</a>
+    <a href="#pinterest"><span class="n">07</span>Pinterest</a>
+    <a href="#youtube"><span class="n">08</span>YouTube</a>
+  </div>
+</nav>
+
+<!-- ============ 01 · INSTAGRAM ============ -->
+<section class="platform" id="instagram">
+  <div class="wrap">
+    <aside class="head">
+      <span class="num-tag">01</span>
+      <div class="badge"><span class="dot"></span>Instagram · Feed</div>
+      <h2>The hero <em>announcement</em> + carousel tour.</h2>
+      <p class="desc">A single anchor post that introduces the home, followed by a 10-slide carousel that walks viewers room by room. Schedule the anchor for Sunday 10am PT; carousel the following Wednesday 6pm PT.</p>
+      <div class="tips">
+        <h4>Posting Notes</h4>
+        <ul>
+          <li>Crop hero image to 4:5 to maximize feed real estate</li>
+          <li>Use the first comment for additional hashtags (keep caption under 5)</li>
+          <li>Tag <b>@compass</b>, <b>@inclinevillage</b>, location: Incline Village, NV</li>
+          <li>Pin the hero post to the top of the profile</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <h4 class="subhead">Hero feed post</h4>
+      <div class="mockup ig-post">
+        <div class="ig-head">
+          <div class="ig-avatar"><div class="ig-avatar-inner"><span>623</span></div></div>
+          <div class="ig-userinfo">
+            <div class="ig-username">623tynerway</div>
+            <div class="ig-sub">Incline Village, Nevada</div>
+          </div>
+          <div class="ig-more">⋯</div>
+        </div>
+        <div class="ig-img">
+          <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a8e0-71b6-afed-9dea2e7c9af4.jpeg" alt="623 Tyner Way exterior" />
+        </div>
+        <div class="ig-actions">
+          <svg viewBox="0 0 24 24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24"><line x1="22" y1="3" x2="9.218" y2="10.083" stroke-linecap="round"/><polygon points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke-linejoin="round" fill="none"/></svg>
+          <div class="sp"></div>
+          <svg viewBox="0 0 24 24"><polygon points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ig-likes">2,341 likes</div>
+        <div class="ig-caption">
+          <b>623tynerway</b> Above Second Creek, beneath the pines — a Tahoe statement piece returns to market.
+          <br/><br/>6 BR · 5.5 BA · 7,402 sq ft · A 480-bottle wine cellar, a dedicated theater, and a brand-new cedar sauna completing June 2026.
+          <br/><br/><span class="ig-tags">#LakeTahoeRealEstate #InclineVillage #LuxuryRealEstate #TahoeLuxury #CompassRealEstate</span>
+        </div>
+        <div class="ig-time">2 hours ago</div>
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Caption · Hero feed post</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body">Above Second Creek, beneath the pines — a Tahoe statement piece returns to market.
+
+6 bedrooms · 5.5 bathrooms · 7,402 sq ft · A 480-bottle glass-walled wine cellar, a dedicated theater, a creekside deck, and a brand-new cedar barrel sauna completing June 2026.
+
+Listed at $6,495,000 by Ryan Mitchell &amp; Mary Kleingartner, Compass.
+
+Full tour, video, and private showing requests at the link in bio.
+
+<span class="tag">#LakeTahoeRealEstate #InclineVillage #LuxuryRealEstate #TahoeLuxury #CompassRealEstate #LakeTahoeLuxury #MountainModern #623TynerWay #DiamondPeak #NevadaRealEstate #LuxuryHome #ArchitecturalDigest #TahoeLife #LuxuryListing #DreamHome</span></div>
+      </div>
+
+      <h4 class="subhead">10-slide carousel · Room by room</h4>
+      <div class="carousel-grid">
+        <div class="slide text"><div><em>A Tahoe</em><br/>statement,<br/>above the<br/>creek.</div></div>
+        <div class="slide"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a6b3-70dc-a662-6a07aa478dea.jpeg" alt="" /><div class="n">2</div><div class="lbl">The Deck</div></div>
+        <div class="slide"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-9ee6-729e-8940-f50ac26b6825.jpeg" alt="" /><div class="n">3</div><div class="lbl">Wine Cellar</div></div>
+        <div class="slide"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a05b-73c5-9a24-042b50ad67ad.jpeg" alt="" /><div class="n">4</div><div class="lbl">Pro Kitchen</div></div>
+        <div class="slide"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a5ae-712b-9c86-6e724e991e6d.jpeg" alt="" /><div class="n">5</div><div class="lbl">Theater</div></div>
+        <div class="slide"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-9812-71ea-9d42-7c3744d62cdf.jpeg" alt="" /><div class="n">6</div><div class="lbl">Game Room</div></div>
+        <div class="slide"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a204-7114-8305-cbb0f27b6707.jpeg" alt="" /><div class="n">7</div><div class="lbl">Primary Suite</div></div>
+        <div class="slide"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a55d-700a-931d-5df96f0a7009.jpeg" alt="" /><div class="n">8</div><div class="lbl">The Gym</div></div>
+        <div class="slide"><img src="assets/sauna-deck-aerial.png" alt="" /><div class="n">9</div><div class="lbl">New Sauna · Jun '26</div></div>
+        <div class="slide text"><div><em>Tour</em><br/>at the link<br/>in bio.<br/>$6,495,000</div></div>
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Caption · Carousel</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body">Nine rooms to walk through. Swipe →
+
+<strong>01</strong>  Above Second Creek
+<strong>02</strong>  The reimagined deck
+<strong>03</strong>  A 480-bottle glass cellar
+<strong>04</strong>  The professional kitchen
+<strong>05</strong>  Dedicated theater
+<strong>06</strong>  Game room
+<strong>07</strong>  Main-level primary
+<strong>08</strong>  The gym + studio
+<strong>09</strong>  And the new cedar sauna, finishing June 2026
+
+623 Tyner Way · Incline Village · $6,495,000
+Full film + private tour requests in bio.
+
+<span class="tag">#LakeTahoeRealEstate #InclineVillage #LuxuryRealEstate #MountainModern #TahoeLife #623TynerWay</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · IG STORIES ============ -->
+<section class="platform" id="story">
+  <div class="wrap">
+    <aside class="head">
+      <span class="num-tag">02</span>
+      <div class="badge"><span class="dot"></span>Instagram Stories</div>
+      <h2>A four-frame <em>teaser</em> sequence.</h2>
+      <p class="desc">Four sequential story frames designed to drop viewers from a wide hero into the property's most cinematic rooms, ending on a tap-to-tour sticker linked to the listing site.</p>
+      <div class="tips">
+        <h4>Posting Notes</h4>
+        <ul>
+          <li>Add to a permanent Story Highlight called "Tour"</li>
+          <li>Use the Link sticker on the final frame to drive to <b>623tyner.com</b></li>
+          <li>Re-share each one to feed throughout listing week</li>
+          <li>Frame 4 should use the "Reveal" countdown sticker pointing to June 2026 sauna completion</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content">
+      <div class="story-row">
+
+        <div class="story">
+          <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a8e0-71b6-afed-9dea2e7c9af4.jpeg" alt="" />
+          <div class="st-bars"><span></span><span></span><span></span><span></span></div>
+          <div class="st-head"><div class="av"></div>623tynerway · 2h</div>
+          <div class="st-content">
+            <div class="pre">Just Listed</div>
+            <h4>A statement on Second Creek.</h4>
+            <div class="stk bot">Swipe →</div>
+          </div>
+        </div>
+
+        <div class="story">
+          <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-9ee6-729e-8940-f50ac26b6825.jpeg" alt="" />
+          <div class="st-bars"><span></span><span></span><span></span><span></span></div>
+          <div class="st-head"><div class="av"></div>623tynerway · 2h</div>
+          <div class="st-content">
+            <div class="pre">Inside, the cellar</div>
+            <h4>480 bottles, glass-walled, dual zone.</h4>
+            <div class="stk bot">Tap to expand</div>
+          </div>
+        </div>
+
+        <div class="story">
+          <img src="assets/sauna-deck-aerial.png" alt="" />
+          <div class="st-bars"><span></span><span></span><span></span><span></span></div>
+          <div class="st-head"><div class="av"></div>623tynerway · 2h</div>
+          <div class="st-content">
+            <div class="pre">Coming Summer 2026</div>
+            <h4>A cedar sauna, tucked into the pines.</h4>
+            <div class="stk bot" style="background:#fff;color:#000">⏱ Countdown</div>
+          </div>
+        </div>
+
+        <div class="story">
+          <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a6b3-70dc-a662-6a07aa478dea.jpeg" alt="" />
+          <div class="st-bars"><span></span><span></span><span></span><span></span></div>
+          <div class="st-head"><div class="av"></div>623tynerway · 2h</div>
+          <div class="st-content">
+            <div class="pre">$6,495,000 · MLS 1018855</div>
+            <h4>The full tour is one tap away.</h4>
+            <div class="stk bot">🔗 Tap for tour</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Story copy · 4 frames</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body"><strong>Frame 1 · Hero exterior</strong>
+JUST LISTED
+A statement on Second Creek.
+
+<strong>Frame 2 · Wine cellar</strong>
+INSIDE, THE CELLAR
+480 bottles, glass-walled, dual zone.
+
+<strong>Frame 3 · Sauna render</strong>
+COMING SUMMER 2026
+A cedar sauna, tucked into the pines.
+[Countdown sticker → June 1, 2026]
+
+<strong>Frame 4 · Creek deck</strong>
+$6,495,000 · MLS 1018855
+The full tour is one tap away.
+[Link sticker → 623tyner.com]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · REEL / TIKTOK ============ -->
+<section class="platform" id="reel">
+  <div class="wrap">
+    <aside class="head">
+      <span class="num-tag">03</span>
+      <div class="badge"><span class="dot"></span>Reels &middot; TikTok</div>
+      <h2>A 28-second <em>walk-through</em> with a hook.</h2>
+      <p class="desc">A vertical reel built around one provocative question — "How do you put a price on the sound of a creek?" — then a fast, paced reveal of the home's most photogenic spaces. Same video, native to Reels, TikTok, and YouTube Shorts.</p>
+      <div class="tips">
+        <h4>Posting Notes</h4>
+        <ul>
+          <li>Hook within the first 1.5 seconds — text overlay + audio swell</li>
+          <li>Cut on the beat — keep every clip under 2.5s</li>
+          <li>Use trending cinematic audio (filter: instrumental, 25-40s, &gt;1M uses)</li>
+          <li>Caption goes on-screen too, not just in the description</li>
+          <li>Post to Reels at 11am PT, TikTok at 7pm PT, Shorts immediately after</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <div class="tt-mock">
+        <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a6b3-70dc-a662-6a07aa478dea.jpeg" alt="" />
+        <div class="tt-overlay"></div>
+        <div class="tt-hook">
+          <div class="hk">How do you put a price on the <em>sound of a creek?</em></div>
+        </div>
+        <div class="tt-side">
+          <div class="av">623</div>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938z" stroke-width="1.5"/></svg>18.4K</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z"/></svg>342</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="white"><polygon points="14 2 14 8 21 8 14 2"/><path d="M14 9V2H4a2 2 0 00-2 2v16a2 2 0 002 2h16a2 2 0 002-2V9z" fill="none" stroke="white" stroke-width="1.5"/></svg>Save</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="white"><polygon points="20.5 12 4.5 4 4.5 20"/></svg>891</div>
+        </div>
+        <div class="tt-text">
+          <div class="username">@623tynerway</div>
+          <div class="cap"><span class="h">"How do you put a price on the sound of a creek?"</span> 🌲 Inside our Lake Tahoe listing on Second Creek. Full tour in bio. <span class="h">#LakeTahoe #LuxuryRealEstate #InclineVillage</span></div>
+          <div class="music">♪ original sound — cinematic ambient · 32s</div>
+        </div>
+      </div>
+
+      <div class="shot-list">
+        <h4>Shot list · 28 seconds</h4>
+        <ol>
+          <li><span class="time">0:00 – 0:02</span><div class="desc"><b>HOOK · Slow push-in on the creek deck</b>Text overlay (centered, serif italic): "How do you put a price on the sound of a creek?"</div></li>
+          <li><span class="time">0:02 – 0:05</span><div class="desc"><b>Drone reveal · Pull-back from the deck</b>Whole house, pine canopy, creek visible. No text. Let the audio breathe.</div></li>
+          <li><span class="time">0:05 – 0:08</span><div class="desc"><b>Walking shot · Entry through front door</b>Glide-cam into the great room. Wine cellar visible center frame.</div></li>
+          <li><span class="time">0:08 – 0:11</span><div class="desc"><b>Wine cellar · Glass close-up</b>Slow pan along the bottles. Text overlay (bottom): "480 bottles. Dual-zone."</div></li>
+          <li><span class="time">0:11 – 0:14</span><div class="desc"><b>Kitchen · Island arc</b>Counter-tracking shot around the island. Text overlay: "Pro kitchen."</div></li>
+          <li><span class="time">0:14 – 0:17</span><div class="desc"><b>Theater · Reveal cut</b>Dark room. Lights come up. Text overlay: "Theater."</div></li>
+          <li><span class="time">0:17 – 0:20</span><div class="desc"><b>Primary suite · Doorway push-in</b>Frame the creek-view windows. Text overlay: "Main-level primary."</div></li>
+          <li><span class="time">0:20 – 0:24</span><div class="desc"><b>Sauna · Lantern path</b>Cedar barrel sauna in the pines. Text overlay: "And one more thing — June 2026."</div></li>
+          <li><span class="time">0:24 – 0:28</span><div class="desc"><b>CTA · Static hero plate</b>"623 Tyner Way · Incline Village · $6,495,000 · Tour at 623tyner.com"</div></li>
+        </ol>
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Caption · Reels / TikTok / Shorts</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body">How do you put a price on the sound of a creek? 🌲
+
+Inside 623 Tyner Way — a 7,402 sq ft Lake Tahoe sanctuary above Second Creek. 480-bottle wine cellar, dedicated theater, and a cedar sauna finishing June 2026.
+
+$6,495,000 · Compass · Incline Village, NV
+Full tour: 623tyner.com (link in bio)
+
+<span class="tag">#LakeTahoe #LakeTahoeRealEstate #InclineVillage #LuxuryRealEstate #LuxuryHome #DreamHome #MountainHome #TahoeLife #HouseTour #RealEstateTok #CompassRealEstate #Architecture #InteriorDesign #MillionDollarListing #LuxuryListing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · FACEBOOK ============ -->
+<section class="platform" id="facebook">
+  <div class="wrap">
+    <aside class="head">
+      <span class="num-tag">04</span>
+      <div class="badge"><span class="dot"></span>Facebook</div>
+      <h2>The long-form <em>announcement</em> post.</h2>
+      <p class="desc">Facebook rewards storytelling and full text. This is the version of the listing that reads as a letter — designed to be shared into local Tahoe groups, alumni networks, and the agents' personal pages.</p>
+      <div class="tips">
+        <h4>Posting Notes</h4>
+        <ul>
+          <li>Post from both <b>Compass Lake Tahoe</b> and the agents' personal pages</li>
+          <li>Drop into 2–3 Tahoe / Reno / Bay Area community groups</li>
+          <li>Boost with a $250 budget targeted: HHI $500K+, ages 38-65, interests in skiing / wine / luxury</li>
+          <li>Include the listing URL — Facebook will pull a rich preview</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content">
+      <div class="mockup fb-post">
+        <div class="fb-head">
+          <div class="fb-av">623</div>
+          <div>
+            <div class="fb-name">623 Tyner Way · Incline Village <svg viewBox="0 0 16 16"><path d="M8 0L6.36 1.91l-2.47-.45-.45 2.47L1 5.6 1.91 8 1 10.4l2.44 1.67.45 2.47 2.47-.45L8 16l1.64-1.91 2.47.45.45-2.47L15 10.4 14.09 8 15 5.6l-2.44-1.67-.45-2.47-2.47.45zM6.5 11.5L3 8l1.5-1.5L6.5 8.5 11.5 3.5 13 5z"/></svg></div>
+            <div class="fb-time">Just now <span>📍 Incline Village, Nevada</span></div>
+          </div>
+        </div>
+        <div class="fb-text">JUST LISTED — 623 Tyner Way, Incline Village 🌲
+
+A waterfront alpine sanctuary on Second Creek, this 7,402 sq ft home is what an irreplaceable Tahoe property actually looks like.
+
+→ 6 bedrooms / 5.5 bathrooms
+→ Glass-walled 480-bottle wine cellar
+→ Dedicated movie theater
+→ Pro-grade kitchen + game room + gym
+→ Brand-new cedar sauna completing June 2026
+→ Backs to a protected greenbelt — total privacy
+
+Offered at $6,495,000 by <span class="tag">@Ryan Mitchell</span> &amp; <span class="tag">@Mary Kleingartner</span> · <span class="tag">@Compass</span>
+
+Private tours by appointment. The full virtual tour, 75-photo gallery, and film are live now at 623tyner.com.</div>
+        <div class="fb-img"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a8e0-71b6-afed-9dea2e7c9af4.jpeg" alt="" /></div>
+        <div class="fb-stats">
+          <div class="fb-reacts"><div class="fb-r like"></div><div class="fb-r heart"></div><div class="fb-r care"></div> 487</div>
+          <div>62 comments · 41 shares</div>
+        </div>
+        <div class="fb-actions">
+          <div class="fb-action"><svg viewBox="0 0 24 24"><path d="M7 11v8a2 2 0 002 2h7l4-8V11h-5v-5a2 2 0 00-2-2l-4 9z"/></svg>Like</div>
+          <div class="fb-action"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8z"/></svg>Comment</div>
+          <div class="fb-action"><svg viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13"/></svg>Share</div>
+        </div>
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Full Facebook post copy</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body">🌲 JUST LISTED · 623 TYNER WAY, INCLINE VILLAGE
+
+A waterfront alpine sanctuary on Second Creek — this 7,402 sq ft home is what an irreplaceable Tahoe property actually looks like.
+
+→ 6 bedrooms / 5.5 bathrooms
+→ Glass-walled 480-bottle wine cellar
+→ Dedicated movie theater
+→ Pro-grade kitchen with island, double ovens, walk-in pantry
+→ Game room, gym &amp; studio, main-level primary suite
+→ Brand-new cedar barrel sauna completing June 2026
+→ Backs to a protected greenbelt — total privacy
+→ 5 min to Diamond Peak · 7 min to Incline Beach · 45 min to Reno-Tahoe
+
+Offered at $6,495,000 by Ryan Mitchell &amp; Mary Kleingartner, Compass.
+
+Private tours by appointment. The full virtual tour, 75-photo gallery, and property film are live now at 623tyner.com.
+
+Know someone considering a move to Tahoe? Tag them below or share this post — we'll handle the rest.
+
+<span class="tag">#LakeTahoe #InclineVillage #LuxuryRealEstate #JustListed #Compass #623TynerWay #TahoeLife #NevadaRealEstate #DiamondPeak</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · LINKEDIN ============ -->
+<section class="platform" id="linkedin">
+  <div class="wrap">
+    <aside class="head">
+      <span class="num-tag">05</span>
+      <div class="badge"><span class="dot"></span>LinkedIn</div>
+      <h2>A market-positioned <em>broker</em> post.</h2>
+      <p class="desc">LinkedIn isn't the place for "Just Listed!" — it's where you frame this home as a case study in the Tahoe luxury market. Reads like an industry note, with a soft CTA at the end.</p>
+      <div class="tips">
+        <h4>Posting Notes</h4>
+        <ul>
+          <li>Post from the listing agent's personal profile, not the brokerage page</li>
+          <li>Use a 1.91:1 landscape image (1200x628 minimum)</li>
+          <li>Skip hashtag spam — 3 to 5 tasteful tags only</li>
+          <li>Comment first with the listing URL (LinkedIn deprioritizes external links in the post body)</li>
+          <li>Tag colleagues + Compass — they'll reshare</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content">
+      <div class="mockup li-post">
+        <div class="li-head">
+          <div class="li-av">RM</div>
+          <div>
+            <div class="li-name">Ryan Mitchell</div>
+            <div class="li-title">Real Estate Advisor at Compass · Lake Tahoe Luxury Specialist</div>
+            <div class="li-time">2h</div>
+          </div>
+        </div>
+        <div class="li-text">A look at what irreplaceability looks like in the Tahoe luxury market.
+
+This week we listed 623 Tyner Way — 7,402 sq ft on Second Creek, in the heart of Incline Village. What makes it instructive isn't the price ($6.495M) — it's the room mix.
+
+The buyer who lands here isn't shopping square footage. They're shopping for a finished theater, a 480-bottle cellar, and a cedar sauna being built into the pines as we speak. Each of those would be a year-long capital project on a comparable lot.
+
+A short thread on what we're seeing in the &lt;$10M Tahoe segment in the comments. Full listing linked there too.
+
+<span class="tag">#LakeTahoe</span> <span class="tag">#LuxuryRealEstate</span> <span class="tag">#Compass</span> <span class="tag">#RealEstateMarket</span></div>
+        <div class="li-img"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a8e0-71b6-afed-9dea2e7c9af4.jpeg" alt="" /></div>
+        <div class="li-stats"><span>👍 ❤️ 💡 184</span><span>28 comments · 12 reposts</span></div>
+        <div class="li-actions">
+          <div class="li-action">👍 Like</div>
+          <div class="li-action">💬 Comment</div>
+          <div class="li-action">↻ Repost</div>
+          <div class="li-action">↗ Send</div>
+        </div>
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Full LinkedIn post copy</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body">A look at what irreplaceability looks like in the Tahoe luxury market.
+
+This week we listed 623 Tyner Way — 7,402 sq ft on Second Creek, in the heart of Incline Village. What makes it instructive isn't the price ($6.495M) — it's the room mix.
+
+The buyer who lands here isn't shopping square footage. They're shopping for a finished theater, a 480-bottle glass-walled cellar, and a cedar sauna being built into the pines as we speak. Each of those would be a year-long capital project on a comparable lot — and all three sit inside a home that already has a main-level primary, a pro kitchen, a game room, and a gym.
+
+Three things we're watching in the sub-$10M Incline Village segment heading into Summer '26:
+
+→ Inventory of finished, turn-key homes (not projects) remains at a multi-year low
+→ Buyers from the Bay Area and Pacific Northwest continue to dominate showings
+→ Walk-to-creek and walk-to-trail homes are clearing comparable lake-view homes faster
+
+Happy to share the full market note with anyone considering a 2026 move. Listing details in the first comment.
+
+— Ryan
+Compass · NV S.65547
+
+<span class="tag">#LakeTahoe #LuxuryRealEstate #Compass #RealEstateMarket #InclineVillage</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 · X / TWITTER ============ -->
+<section class="platform" id="twitter">
+  <div class="wrap">
+    <aside class="head">
+      <span class="num-tag">06</span>
+      <div class="badge"><span class="dot"></span>X / Twitter</div>
+      <h2>A five-tweet <em>thread</em>, room by room.</h2>
+      <p class="desc">X rewards specificity and image quality. A short, declarative thread — each tweet anchored by one photo and one fact — outperforms a single shout post. Post as a thread, then quote-tweet the first tweet later in the week.</p>
+      <div class="tips">
+        <h4>Posting Notes</h4>
+        <ul>
+          <li>Post from a verified account if available</li>
+          <li>First tweet is the hook — no link in it (X suppresses external links)</li>
+          <li>Drop the listing URL in the final tweet only</li>
+          <li>Each image is 16:9; let the photos do the talking</li>
+          <li>Pin the first tweet to the agent's profile</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content">
+      <div class="mockup x-thread">
+
+        <div class="x-tweet">
+          <div class="x-avwrap"><div class="x-av">623</div><div class="x-thread-line"></div></div>
+          <div>
+            <div class="x-n">01</div>
+            <div class="x-name">623 Tyner Way <svg viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg><span class="x-handle">@623tynerway · 2h</span></div>
+            <div class="x-text">Just listed.
+
+A 7,402 sq ft alpine sanctuary above Second Creek in Incline Village, Lake Tahoe.
+
+A thread on what makes 623 Tyner Way irreplaceable ↓</div>
+            <div class="x-img"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a8e0-71b6-afed-9dea2e7c9af4.jpeg" alt="" /></div>
+            <div class="x-stats"><span>💬 42</span><span>🔁 128</span><span>♡ 894</span><span>👁 18.4K</span></div>
+          </div>
+        </div>
+
+        <div class="x-tweet">
+          <div class="x-avwrap"><div class="x-av">623</div><div class="x-thread-line"></div></div>
+          <div>
+            <div class="x-n">02</div>
+            <div class="x-name">623 Tyner Way <svg viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6z"/></svg><span class="x-handle">@623tynerway · 2h</span></div>
+            <div class="x-text">1/ The deck.
+
+Reimagined this year — it now stretches directly over the rushing waters of Second Creek. Year-round covered deck adjacent.
+
+The creek isn't a view. It's the soundtrack.</div>
+            <div class="x-img"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a6b3-70dc-a662-6a07aa478dea.jpeg" alt="" /></div>
+            <div class="x-stats"><span>💬 8</span><span>🔁 19</span><span>♡ 142</span><span>👁 5.1K</span></div>
+          </div>
+        </div>
+
+        <div class="x-tweet">
+          <div class="x-avwrap"><div class="x-av">623</div><div class="x-thread-line"></div></div>
+          <div>
+            <div class="x-n">03</div>
+            <div class="x-name">623 Tyner Way <svg viewBox="0 0 24 24"><path d="M22.5 12.5z"/></svg><span class="x-handle">@623tynerway · 2h</span></div>
+            <div class="x-text">2/ The cellar.
+
+480 bottles. Glass-walled. Dual-zone climate. Visible from the great room, the kitchen, and the dining room.
+
+Built to be admired as much as poured from.</div>
+            <div class="x-img"><img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-9ee6-729e-8940-f50ac26b6825.jpeg" alt="" /></div>
+            <div class="x-stats"><span>💬 6</span><span>🔁 14</span><span>♡ 98</span><span>👁 4.3K</span></div>
+          </div>
+        </div>
+
+        <div class="x-tweet">
+          <div class="x-avwrap"><div class="x-av">623</div><div class="x-thread-line"></div></div>
+          <div>
+            <div class="x-n">04</div>
+            <div class="x-name">623 Tyner Way <svg viewBox="0 0 24 24"><path d="M22.5 12.5z"/></svg><span class="x-handle">@623tynerway · 2h</span></div>
+            <div class="x-text">3/ One more thing.
+
+A cedar barrel sauna is being completed in the pines, with a lantern-lit stone path from the deck.
+
+Finishing June 2026. The next owner walks into a brand-new ritual.</div>
+            <div class="x-img"><img src="assets/sauna-deck-aerial.png" alt="" /></div>
+            <div class="x-stats"><span>💬 11</span><span>🔁 22</span><span>♡ 187</span><span>👁 6.0K</span></div>
+          </div>
+        </div>
+
+        <div class="x-tweet">
+          <div class="x-avwrap"><div class="x-av">623</div></div>
+          <div>
+            <div class="x-n">05</div>
+            <div class="x-name">623 Tyner Way <svg viewBox="0 0 24 24"><path d="M22.5 12.5z"/></svg><span class="x-handle">@623tynerway · 2h</span></div>
+            <div class="x-text">4/ Offered at $6,495,000.
+
+6 BR · 5.5 BA · Theater · Game room · Pro kitchen · Main-level primary.
+
+Full film, 75 photos, and private tour request → 623tyner.com
+
+Listed by Ryan Mitchell &amp; Mary Kleingartner, Compass.</div>
+            <div class="x-stats"><span>💬 18</span><span>🔁 38</span><span>♡ 246</span><span>👁 7.2K</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Full thread copy · 5 tweets</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body"><strong>TWEET 1 / Hero</strong>
+Just listed.
+
+A 7,402 sq ft alpine sanctuary above Second Creek in Incline Village, Lake Tahoe.
+
+A thread on what makes 623 Tyner Way irreplaceable ↓
+[image: hero exterior]
+
+<strong>TWEET 2 / The Deck</strong>
+1/ The deck.
+
+Reimagined this year — it now stretches directly over the rushing waters of Second Creek. Year-round covered deck adjacent.
+
+The creek isn't a view. It's the soundtrack.
+[image: creek deck]
+
+<strong>TWEET 3 / The Cellar</strong>
+2/ The cellar.
+
+480 bottles. Glass-walled. Dual-zone climate. Visible from the great room, the kitchen, and the dining room.
+
+Built to be admired as much as poured from.
+[image: wine cellar]
+
+<strong>TWEET 4 / The Sauna</strong>
+3/ One more thing.
+
+A cedar barrel sauna is being completed in the pines, with a lantern-lit stone path from the deck.
+
+Finishing June 2026. The next owner walks into a brand-new ritual.
+[image: sauna render]
+
+<strong>TWEET 5 / CTA</strong>
+4/ Offered at $6,495,000.
+
+6 BR · 5.5 BA · Theater · Game room · Pro kitchen · Main-level primary.
+
+Full film, 75 photos, and private tour request → 623tyner.com
+
+Listed by Ryan Mitchell &amp; Mary Kleingartner, Compass.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · PINTEREST ============ -->
+<section class="platform" id="pinterest">
+  <div class="wrap">
+    <aside class="head">
+      <span class="num-tag">07</span>
+      <div class="badge"><span class="dot"></span>Pinterest</div>
+      <h2>Six pins, one <em>tour</em> board.</h2>
+      <p class="desc">Pinterest is the long tail. A board titled "623 Tyner Way · Lake Tahoe" with six anchor pins keeps traffic flowing to the listing site for 6–12 months. Each pin is keyword-rich and links directly to the matching section of the listing.</p>
+      <div class="tips">
+        <h4>Posting Notes</h4>
+        <ul>
+          <li>Vertical 2:3 ratio (1000x1500) for every pin — non-negotiable</li>
+          <li>Each pin description should read like an SEO snippet, not a caption</li>
+          <li>Link each pin to the matching anchor on the listing site (#sauna, #wine, etc.)</li>
+          <li>Save the same pins to "Lake Tahoe Homes" and "Mountain Modern" group boards</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content">
+      <div class="pin-grid">
+        <div class="pin">
+          <div class="pin-img">
+            <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a8e0-71b6-afed-9dea2e7c9af4.jpeg" alt="" />
+            <div class="save">Save</div>
+            <div class="overlay-title">A Lake Tahoe sanctuary above Second Creek</div>
+          </div>
+          <div class="pin-meta"><span class="pt">623 Tyner Way · Incline Village</span>6 BR · 7,402 sq ft · $6.495M · Tour →</div>
+        </div>
+        <div class="pin">
+          <div class="pin-img">
+            <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-9ee6-729e-8940-f50ac26b6825.jpeg" alt="" />
+            <div class="save">Save</div>
+            <div class="overlay-title">A 480-bottle glass-walled wine cellar</div>
+          </div>
+          <div class="pin-meta"><span class="pt">Wine Cellar Inspiration</span>Glass walls · Dual-zone · Lake Tahoe luxury home</div>
+        </div>
+        <div class="pin">
+          <div class="pin-img">
+            <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a6b3-70dc-a662-6a07aa478dea.jpeg" alt="" />
+            <div class="save">Save</div>
+            <div class="overlay-title">A deck over a mountain creek</div>
+          </div>
+          <div class="pin-meta"><span class="pt">Mountain Modern Outdoor Living</span>Creekside · Pines · Greenbelt</div>
+        </div>
+        <div class="pin">
+          <div class="pin-img">
+            <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a05b-73c5-9a24-042b50ad67ad.jpeg" alt="" />
+            <div class="save">Save</div>
+            <div class="overlay-title">A pro kitchen for the mountains</div>
+          </div>
+          <div class="pin-meta"><span class="pt">Kitchen Design · Lake Tahoe</span>Island · Double ovens · Walk-in pantry</div>
+        </div>
+        <div class="pin">
+          <div class="pin-img">
+            <img src="https://cdn.aryeo.com/listings/623-tyner-way-incline-village-nv-89451-19728730/resized/large/large-0199c3e2-a5ae-712b-9c86-6e724e991e6d.jpeg" alt="" />
+            <div class="save">Save</div>
+            <div class="overlay-title">A dedicated home theater</div>
+          </div>
+          <div class="pin-meta"><span class="pt">Home Theater Inspiration</span>Tiered seating · Storm-day ready</div>
+        </div>
+        <div class="pin">
+          <div class="pin-img">
+            <img src="assets/sauna-deck-aerial.png" alt="" />
+            <div class="save">Save</div>
+            <div class="overlay-title">A cedar barrel sauna in the pines</div>
+          </div>
+          <div class="pin-meta"><span class="pt">Outdoor Sauna · Backyard Sanctuary</span>Cedar · Glass-end · Creekside</div>
+        </div>
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Pin descriptions · 6 pins</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body"><strong>PIN 01 · Hero</strong>
+Title: A Lake Tahoe sanctuary above Second Creek
+Description: 623 Tyner Way · A 7,402 sq ft alpine luxury home in Incline Village, Nevada. 6 bedrooms, 480-bottle wine cellar, dedicated theater, creekside deck. Offered at $6,495,000 by Compass. #LakeTahoe #LuxuryHome #MountainModern
+
+<strong>PIN 02 · Wine Cellar</strong>
+Title: A 480-bottle glass-walled wine cellar
+Description: Glass walls, dual-zone climate control, custom millwork. The centerpiece of a Lake Tahoe luxury home — built for the collector. #WineCellar #LuxuryHomeDesign #WineRoom
+
+<strong>PIN 03 · Creek Deck</strong>
+Title: A deck over a mountain creek
+Description: A reimagined creekside deck on Second Creek, Lake Tahoe. Surrounded by pines, backing to a protected greenbelt. #MountainModern #OutdoorLiving #LakeTahoeHomes
+
+<strong>PIN 04 · Kitchen</strong>
+Title: A pro kitchen for the mountains
+Description: Island-anchored professional kitchen with gas range, double ovens, walk-in pantry, wine refrigerator. Flows into the great room. #KitchenDesign #LuxuryKitchen #LakeTahoe
+
+<strong>PIN 05 · Theater</strong>
+Title: A dedicated home theater
+Description: Tiered seating, dark walls, dialed-in screening room. Built for Tahoe storm days. #HomeTheater #LuxuryHome #MovieRoom
+
+<strong>PIN 06 · Sauna</strong>
+Title: A cedar barrel sauna in the pines
+Description: A new outdoor sauna at 623 Tyner Way, completing June 2026. Cedar interior, glass-end, lantern-lit stone path from the deck. #OutdoorSauna #BackyardSauna #ColdPlungeLife</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 · YOUTUBE ============ -->
+<section class="platform" id="youtube">
+  <div class="wrap">
+    <aside class="head">
+      <span class="num-tag">08</span>
+      <div class="badge"><span class="dot"></span>YouTube · Full Film + Short</div>
+      <h2>One <em>long-form</em> film, one Short.</h2>
+      <p class="desc">YouTube hosts the canonical property film (3–4 minutes, the same one embedded on the listing site's hero play button) and a 50-second YouTube Short that funnels search traffic back to it. Optimize the title and first 100 characters of the description for SEO.</p>
+      <div class="tips">
+        <h4>Posting Notes</h4>
+        <ul>
+          <li>Use the hero photo as a custom thumbnail with a serif overlay: "Inside · $6.495M Lake Tahoe Home"</li>
+          <li>Add chapters to the long-form film (Exterior, Kitchen, Cellar, Theater, Primary, Sauna)</li>
+          <li>Link the listing URL in the first line of the description</li>
+          <li>Cross-reference: pin the Short into the long-form's community tab</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">Long-form film · Title + description</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body"><strong>TITLE</strong>
+Inside a $6,495,000 Lake Tahoe Home on Second Creek | 623 Tyner Way, Incline Village
+
+<strong>DESCRIPTION</strong>
+🌲 Full property film + private tour requests: https://623tyner.com
+
+623 Tyner Way is a 7,402 sq ft alpine sanctuary in Incline Village, Lake Tahoe — set above the rushing waters of Second Creek and backing to a protected greenbelt.
+
+In this tour:
+00:00 · Above Second Creek
+00:34 · The reimagined creek deck
+01:02 · The 480-bottle wine cellar
+01:35 · The pro kitchen + great room
+02:08 · Game room, theater, and gym
+02:48 · The main-level primary suite
+03:18 · The new cedar sauna (June 2026)
+03:55 · Location: Diamond Peak, Incline Beach, the village
+
+🏔 6 bedrooms · 5.5 bathrooms · 7,402 sq ft · 3 stories · Built 2005, fully reimagined
+🪵 Brand-new cedar barrel sauna completing June 2026
+🍷 480-bottle glass-walled wine cellar, dual-zone
+🎬 Dedicated movie theater, game room, gym &amp; studio
+📍 5 min to Diamond Peak Ski · 7 min to Incline Beach · 45 min to Reno-Tahoe Airport
+
+OFFERED AT $6,495,000 BY COMPASS
+Ryan Mitchell · ryan.mitchell@compass.com · (775) 287-2847
+Mary Kleingartner · mary.kleingartner@compass.com · (206) 604-1200
+
+<span class="tag">#LakeTahoe #InclineVillage #LuxuryRealEstate #HomeTour #LakeTahoeHomes #Compass #LuxuryHome #MillionDollarListing</span></div>
+      </div>
+
+      <div class="copy-block">
+        <div class="cb-head">
+          <span class="lbl">YouTube Short · Title + description</span>
+          <button class="cb-copy">Copy</button>
+        </div>
+        <div class="cb-body"><strong>TITLE</strong>
+The sound of a $6.5M Lake Tahoe home 🌲 #shorts
+
+<strong>DESCRIPTION</strong>
+Inside 623 Tyner Way · Incline Village, Lake Tahoe
+6 BR · 7,402 sq ft · Wine cellar · Theater · New sauna
+Full tour → 623tyner.com
+
+<span class="tag">#shorts #laketahoe #luxuryhome #realestate #hometour #inclinevillage #compass #milliondollarlisting #dreamhome</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="col">
+      <div class="brand"><em>623</em> Tyner Way · Social Media Kit</div>
+      <p style="margin-top:18px">All posts above are ready to publish. Captions are copyable. Hashtag mixes are tuned for each platform. Adjust scheduling to your launch week as needed.</p>
+    </div>
+    <div class="col">
+      <h5>Recommended Sequence</h5>
+      <p>Mon · IG hero + Facebook<br/>Tue · LinkedIn note<br/>Wed · IG carousel<br/>Thu · X thread<br/>Fri · Reel / TikTok / YT Short<br/>Sat · Pinterest pins (all 6)<br/>Sun · IG Stories teaser</p>
+    </div>
+    <div class="col">
+      <h5>Tracking</h5>
+      <p>UTM all out-bound links to <a href="#">623tyner.com</a> with platform-specific source tags so we can see which channel is driving showings.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Copy buttons
+document.querySelectorAll('.cb-copy').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const body = btn.closest('.copy-block').querySelector('.cb-body');
+    // Use innerText to strip HTML tag styling but keep line breaks
+    const text = body.innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      const orig = btn.textContent;
+      btn.textContent = 'Copied ✓';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1600);
+    }).catch(() => {
+      btn.textContent = 'Press ⌘C';
+    });
+  });
+});
+
+// Smooth scroll for TOC (window-level scroll, avoids container hijacking)
+document.querySelectorAll('.toc a').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    if(href.startsWith('#')){
+      e.preventDefault();
+      const el = document.querySelector(href);
+      if(el){
+        const top = el.getBoundingClientRect().top + window.scrollY - 8;
+        window.scrollTo({top, behavior:'smooth'});
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
