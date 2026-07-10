@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>623 Tyner Way · Incline Village, Lake Tahoe</title>
-<meta name="description" content="A waterfront alpine sanctuary on Second Creek. 6 bed · 5.5 bath · 7,402 sq ft of reimagined Tahoe luxury — wine room, theater, creekside deck, and a brand-new sauna completing June 2026." />
+<meta name="description" content="A waterfront alpine sanctuary on Second Creek. 6 bed · 5.5 bath · 7,402 sq ft of reimagined Tahoe luxury — wine room, theater, creekside deck, and a new cedar sauna with a natural creek cold plunge: a longevity ritual built into the pines." />
 <meta name="theme-color" content="#1a2422" />
 
 <!-- Social / OG -->
@@ -332,6 +332,31 @@ section{padding:clamp(80px,10vw,160px) clamp(20px,4vw,56px)}
   .sauna .inner{grid-template-columns:1fr}
   .sauna .photo{min-height:0;aspect-ratio:4/3}
 }
+/* Sauna — longevity ritual steps */
+.sauna .copy .ritual{
+  margin-top:14px;padding-top:24px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.sauna .copy .ritual .step .n{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--bronze);line-height:1}
+.sauna .copy .ritual .step .t{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#6c655a;font-weight:600;margin-top:9px}
+.sauna .copy .ritual .step .d{font-size:13px;color:#3a362f;line-height:1.5;margin-top:6px}
+@media (max-width:560px){.sauna .copy .ritual{grid-template-columns:1fr;gap:14px}}
+/* Sauna — creekside supporting gallery */
+.sauna-more{max-width:var(--max);margin:0 auto;padding:clamp(44px,6vw,76px) 0 0}
+.sauna-more .head{max-width:760px;margin:0 auto clamp(30px,4vw,48px);text-align:center}
+.sauna-more .head .pre{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--bronze);margin-bottom:14px;font-weight:500}
+.sauna-more .head h3{font-size:clamp(24px,3vw,40px)}
+.sauna-more .head h3 em{font-style:italic;color:var(--bronze)}
+.sauna-more .head p{font-size:16px;line-height:1.65;color:#3a362f;margin-top:16px}
+.sauna-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sauna-grid figure{position:relative;overflow:hidden;background:var(--paper-2)}
+.sauna-grid img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.3s cubic-bezier(.2,.7,.2,1)}
+.sauna-grid figure:hover img{transform:scale(1.05)}
+.sauna-grid figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 42%,rgba(0,0,0,.6) 100%);pointer-events:none}
+.sauna-grid figcaption{position:absolute;left:16px;right:16px;bottom:15px;color:var(--paper);z-index:1;font-size:10px;letter-spacing:.24em;text-transform:uppercase;opacity:.9}
+.sauna-grid figcaption b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:19px;letter-spacing:0;text-transform:none;margin-bottom:3px;opacity:1}
+@media (max-width:900px){.sauna-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.sauna-grid{grid-template-columns:1fr}.sauna-grid img{aspect-ratio:4/3}}
 
 /* ============ FILM / VIDEO ============ */
 .film{background:var(--forest-deep);color:var(--paper);text-align:center}
@@ -688,22 +713,49 @@ section{padding:clamp(80px,10vw,160px) clamp(20px,4vw,56px)}
   </div>
 </section>
 
-<!-- ============ SAUNA / WHAT'S NEW ============ -->
+<!-- ============ SAUNA / WELLNESS / WHAT'S NEW ============ -->
 <section class="sauna" id="sauna">
   <div class="inner reveal">
     <div class="photo">
-      <img src="assets/sauna-deck-aerial.png" alt="Aerial view of the new outdoor sauna and creekside deck at 623 Tyner Way" />
-      <div class="badge"><span class="dot"></span>New · Coming Soon</div>
+      <img loading="lazy" src="assets/sauna-dusk.jpg" alt="Cedar barrel sauna glowing from within at dusk, string lights overhead, beside Second Creek at 623 Tyner Way" />
+      <div class="badge"><span class="dot"></span>New · Now Complete</div>
     </div>
     <div class="copy">
-      <div class="pre">Just Added · Outdoor Sanctuary</div>
-      <h2>A barrel sauna, tucked into the <em>pines.</em></h2>
-      <p>Step off the deck, follow the lantern-lit path of stones, and disappear into a cedar barrel sauna positioned beside the creek. A new ritual — built for cold mountain mornings and snow-quiet evenings.</p>
-      <p>Cedar interior. Glass-end design. Steps from the creek. Steps from the deck. A complete reset.</p>
-      <div class="timeline">
-        <div class="date"><em>Complete</em><br/>June 2026</div>
-        <div class="label">Finishing touches underway<br/>· Ready for Summer 2026</div>
+      <div class="pre">Just Completed · The Longevity Ritual</div>
+      <h2>A cedar sauna and a wild creek, <em>steps apart.</em></h2>
+      <p>Off the deck and down a path of lantern-lit stone sits a new cedar barrel sauna — glass-ended, Harvia-heated, glowing against the pines. A few steps beyond it, Second Creek runs cold and clear off the mountain: your own natural cold plunge, no membership, no clock.</p>
+      <p>Heat, then cold, then the hush of the forest. It's the contrast ritual wellness retreats are built around — here it's simply your morning. A quiet daily investment in how long, and how well, you get to live in a place like this.</p>
+      <div class="ritual">
+        <div class="step"><div class="n">01</div><div class="t">Heat</div><div class="d">Cedar barrel sauna, glowing at the tree line.</div></div>
+        <div class="step"><div class="n">02</div><div class="t">Plunge</div><div class="d">Second Creek — cold, clear, steps away.</div></div>
+        <div class="step"><div class="n">03</div><div class="t">Calm</div><div class="d">Rocking chairs, string lights, running water.</div></div>
       </div>
+    </div>
+  </div>
+
+  <div class="sauna-more reveal">
+    <div class="head">
+      <div class="pre">The Creekside Sanctuary</div>
+      <h3>Built for the way you want to <em>live longer.</em></h3>
+      <p>A private wellness corner carved into the creek bank — sauna, cold plunge, fire, and forest, all within a few footsteps of the water.</p>
+    </div>
+    <div class="sauna-grid">
+      <figure>
+        <img loading="lazy" src="assets/sauna-day.jpg" alt="Cedar barrel sauna and rocking chairs on the flagstone terrace by day, set among the pines" style="object-position:38% center" />
+        <figcaption><b>The Sauna</b>Cedar · glass-ended</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="assets/creek-plunge.jpg" alt="Second Creek running cold over granite boulders steps from the sauna — a natural cold plunge" />
+        <figcaption><b>The Cold Plunge</b>Second Creek · year-round</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="assets/sauna-creekside.jpg" alt="Rocking chairs beside the barrel sauna with the creek and pines alongside" style="object-position:left center" />
+        <figcaption><b>The Landing</b>Creekside · in the pines</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="assets/sauna-grove-patio.jpg" alt="Aerial view of the fire-pit patio, flagstone path and sauna set among the trees along the creek" />
+        <figcaption><b>The Grove</b>Fire pit · under the stars</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -740,7 +792,7 @@ section{padding:clamp(80px,10vw,160px) clamp(20px,4vw,56px)}
       <span class="bar"></span><span class="eyebrow on-dark">Inquire</span><span class="bar"></span>
     </div>
     <h2 class="reveal">A private viewing, on your <em style="font-style:italic;color:var(--bronze-soft)">schedule.</em></h2>
-    <p class="lead-dark reveal">Contact the listing team at Compass for a private tour, the full brochure, or the latest on the June 2026 sauna build.</p>
+    <p class="lead-dark reveal">Contact the listing team at Compass for a private tour, the full brochure, or a closer look at the newly completed creekside sauna &amp; cold plunge.</p>
 
     <div class="agent-cards reveal">
       <div class="agent">
